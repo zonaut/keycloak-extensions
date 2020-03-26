@@ -1,0 +1,51 @@
+# Customize with https://github.com/github/gitignore
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/node
+/build
+/out
+target/
+dist/
+
+.gradle
+
+# dependencies
+/node_modules
+.vertx
+
+# IDEs and editors
+*.iml
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
