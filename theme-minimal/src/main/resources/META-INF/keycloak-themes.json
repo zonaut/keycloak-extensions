@@ -1,0 +1,14 @@
+{ 
+   "themes":[
+      { 
+         "name":"theme-minimal",
+         "types":[ 
+            "account",
+            "admin",
+            "email",
+            "login",
+            "welcome"
+         ]
+      }
+   ]
+}
