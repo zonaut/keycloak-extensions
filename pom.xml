@@ -2,74 +2,67 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.keycloak</groupId>
-        <artifactId>keycloak-parent</artifactId>
-        <version>9.0.2</version> <!-- https://mvnrepository.com/artifact/org.keycloak/keycloak-parent -->
-    </parent>
-
-    <name>Placeholder Keycloak extensions</name>
-    <description/>
-
-    <artifactId>placeholder-keycloak-extensions</artifactId>
+    <groupId>com.zonaut.keycloak</groupId>
+    <artifactId>zonaut-keycloak-extensions</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+    <name>ZONAUT KEYCLOAK :: EXTENSIONS</name>
+    <description>Examples of Keycloak extensions</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <!-- https://mvnrepository.com/artifact/org.keycloak/keycloak-parent -->
+        <keycloak.version>9.0.2</keycloak.version>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <!-- https://mvnrepository.com/artifact/org.wildfly.plugins/wildfly-maven-plugin -->
+        <maven-wildfly-plugin.version>2.0.2.Final</maven-wildfly-plugin.version>
+    </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-core</artifactId>
+            <version>${keycloak.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-server-spi</artifactId>
+            <version>${keycloak.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-server-spi-private</artifactId>
+            <version>${keycloak.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-services</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.keycloak</groupId>
-            <artifactId>keycloak-saml-core-public</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.logging</groupId>
-            <artifactId>jboss-logging</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.spec.javax.ws.rs</groupId>
-            <artifactId>jboss-jaxrs-api_2.1_spec</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
+            <version>${keycloak.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>placeholder-keycloak-extensions</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>11</source>
-                    <target>11</target>
-                </configuration>
+                <version>${maven-compiler-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
+                <version>${maven-wildfly-plugin.version}</version>
                 <configuration>
                     <skip>false</skip>
                 </configuration>
