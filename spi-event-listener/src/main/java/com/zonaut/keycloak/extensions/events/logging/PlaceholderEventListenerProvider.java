@@ -21,14 +21,18 @@ public class PlaceholderEventListenerProvider implements EventListenerProvider {
 
     @Override
     public void onEvent(Event event) {
-        log.info("## New event");
+        log.info("## New default event");
         log.info("-----------------------------------------------------------");
-        event.getDetails().forEach((key, value) -> log.info(key + " " + value));
+        event.getDetails().forEach((key, value) -> log.info(key + ": " + value));
     }
 
     @Override
     public void onEvent(AdminEvent adminEvent, boolean b) {
-        // Do nothing
+        log.info("## New admin event");
+        log.info("-----------------------------------------------------------");
+        log.info("Resource pathdd" + ": " + adminEvent.getResourcePath());
+        log.info("Resource type" + ": " + adminEvent.getResourceType());
+        log.info("Operation type" + ": " + adminEvent.getOperationType());
     }
 
     @Override

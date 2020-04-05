@@ -9,6 +9,8 @@ Or when using Docker mount the file `./jar-name.jar:/opt/jboss/keycloak/standalo
 
 ## Keycloak admin console configuration
 
+Set the event listener
+
 * Open up Keycloak administration console and select your realm
 * Go to events in the left side bar under Manage
 * Open the config [tab]

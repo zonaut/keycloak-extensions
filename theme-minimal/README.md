@@ -2,12 +2,23 @@
 
 An example of a custom theme with only minimal changes.
 
-Only the h1 tag in the minimal-theme/welcome/index.ftl file has been changed.
+Changes in this theme
+
+* The h1 tag in the `theme-minimal/welcome/index.ftl` file has been changed, `minimal` has been added to it.
+  * You can check this on `http://localhost:8088/auth/`
+* The default email templates are copied from the Keycloak theme base into this theme so we can customize them.
+  * An extra variable `testNewVariable` has been added to `theme-minimal/email/<html AND text dir>/email-test.ftl`
+    * Delete this variable if you don't use the `spi-mail-template-override` otherwise it will fail
+  * The parent has been removed from the `theme-minimal/email/theme.properties` file and locales have been added
 
 ## Keycloak config
 
 Copy the jar in the target folder to the `/opt/jboss/keycloak/standalone/deployments/` folder.
 Or when using Docker mount the file `./jar-name.jar:/opt/jboss/keycloak/standalone/deployments/jar-name.jar`
+
+## Keycloak admin console configuration
+
+The theme can be changed in realm -> realm settings -> themes [tab] or can be passed through environment variables, take a look at the  docker-compose file.
 
 ## Live edit the theme
 

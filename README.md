@@ -4,6 +4,8 @@ Keycloak extension examples
 
 * [spi-event-listener](spi-event-listener/README.md)
   * example of a custom event listener
+* [spi-mail-template-override](spi-mail-template-override/README.md)
+  * example on how to change default mail behaviour and add extra variables to it.
 * [spi-registration-profile](spi-registration-profile/README.md)
   * disable first and last name validation in the registration page
 * [theme-minimal](theme-minimal/README.md)
@@ -18,6 +20,7 @@ Build all
 Build single module
 
     ./mvnw clean install -pl spi-event-listener
+    ./mvnw clean install -pl spi-mail-template-override
     ./mvnw clean install -pl spi-registration-profile
     ./mvnw clean install -pl theme-minimal
 
@@ -38,6 +41,6 @@ Stop
   * User -> admin
   * Password -> password
 * A placeholder realm is available on http://localhost:8088/auth/realms/placeholder
-  * Look in the _resources/demo-config/import-dir/placeholder-users-0.json file for available users
+  * Look in the `_resources/demo-config/import-dir/placeholder-users-0.json` file for available users
   * Password is always 'password' for those users
 * Mailhog will be available on http://localhost:8025/
