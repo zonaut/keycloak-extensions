@@ -1,14 +1,15 @@
 # Keycloak extensions
 
-Keycloak extension examples
+Keycloak extension examples.  
+Titles with * are already activated when running `docker-compose up`
 
-* [spi-event-listener](spi-event-listener/README.md)
+* [spi-event-listener](spi-event-listener/README.md) *
   * example of a custom event listener
-* [spi-mail-template-override](spi-mail-template-override/README.md)
+* [spi-mail-template-override](spi-mail-template-override/README.md) *
   * example on how to change default mail behaviour and add extra variables to it.
 * [spi-registration-profile](spi-registration-profile/README.md)
   * disable first and last name validation in the registration page
-* [theme-minimal](theme-minimal/README.md)
+* [theme-minimal](theme-minimal/README.md) *
   * a custom theme with minimal changes
 
 ## Build

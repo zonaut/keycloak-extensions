@@ -1,6 +1,7 @@
 # SPI event listener
 
-An example of a custom event listener that simply logs the events.
+An example of a custom event listener that logs all events.  
+Also contains an example of a transaction when acting on a certain event.
 
 ## Keycloak config
 
