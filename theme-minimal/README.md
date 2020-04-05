@@ -1,4 +1,4 @@
-# Minimal theme
+# Theme minimal
 
 An example of a custom theme with only minimal changes.
 

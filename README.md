@@ -3,11 +3,11 @@
 Keycloak extension examples
 
 * [spi-event-listener](spi-event-listener/README.md)
-  * example of event listener
+  * example of a custom event listener
 * [spi-registration-profile](spi-registration-profile/README.md)
-  * disable first and last name in registration page
+  * disable first and last name validation in the registration page
 * [theme-minimal](theme-minimal/README.md)
-  * minimal changes to default theme
+  * a custom theme with minimal changes
 
 ## Build
 
