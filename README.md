@@ -34,5 +34,10 @@ Stop
     CTRL + C
     docker-compose down    
 
-* Keycloak will be available on http://localhost:8088/auth/
+* Keycloak admin will be available on http://localhost:8088/auth/
+  * User -> admin
+  * Password -> password
+* A placeholder realm is available on http://localhost:8088/auth/realms/placeholder
+  * Look in the _resources/demo-config/import-dir/placeholder-users-0.json file for available users
+  * Password is always 'password' for those users
 * Mailhog will be available on http://localhost:8025/
