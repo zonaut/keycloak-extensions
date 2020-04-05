@@ -27,7 +27,7 @@ Or when using Docker mount the file `./jar-name.jar:/opt/jboss/keycloak/standalo
 * Select registration flow and click copy, give it a name and press Ok
 * Click the Actions dropdown menu to the far right of 'Copy Of Registration Registration Form' and select 'Add execution'
 
-![spi-registration-profile-actions](../_documentation/images/spi-registration-profile-actions.png)
+![spi-registration-profile-actions](../_resources/images/spi-registration-profile-actions.png)
 
 * Select our custom profile validation from the the list of providers and press save
 * Move our custom profile validation step under the default 'Profile validation' step with the up and down buttons
