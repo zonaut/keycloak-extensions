@@ -1,4 +1,4 @@
-package com.zonaut.keycloak.extensions.events.examples;
+package com.zonaut.keycloak.extensions.events.logging;
 
 import org.jboss.logging.Logger;
 import org.keycloak.models.AbstractKeycloakTransaction;

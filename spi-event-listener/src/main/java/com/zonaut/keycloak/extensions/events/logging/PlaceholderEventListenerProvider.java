@@ -1,7 +1,5 @@
 package com.zonaut.keycloak.extensions.events.logging;
 
-import com.zonaut.keycloak.extensions.events.examples.UserUuidDto;
-import com.zonaut.keycloak.extensions.events.examples.UserVerifiedTransaction;
 import org.jboss.logging.Logger;
 import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;

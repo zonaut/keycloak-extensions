@@ -1,4 +1,4 @@
-package com.zonaut.keycloak.extensions.events.examples;
+package com.zonaut.keycloak.extensions.events.logging;
 
 public class UserUuidDto {
 
