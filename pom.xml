@@ -9,6 +9,7 @@
 	<name>KEYCLOAK EXTENSIONS</name>
 
 	<modules>
+		<module>spi-event-listener</module>
 		<module>spi-registration-profile</module>
 		<module>theme-minimal</module>
 	</modules>

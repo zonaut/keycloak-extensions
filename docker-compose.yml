@@ -1,0 +1,47 @@
+version: '3.7'
+
+services:
+  postgres:
+      image: postgres:12.2
+      container_name: postgres
+      environment:
+        POSTGRES_DB: keycloak
+        POSTGRES_USER: keycloak
+        POSTGRES_PASSWORD: password
+
+  keycloak:
+      image: jboss/keycloak:9.0.2
+      container_name: keycloak
+      environment:
+        DB_VENDOR: POSTGRES
+        DB_ADDR: postgres
+        DB_DATABASE: keycloak
+        DB_USER: keycloak
+        DB_PASSWORD: password
+        KEYCLOAK_USER: admin
+        KEYCLOAK_PASSWORD: password
+        PROXY_ADDRESS_FORWARDING: "true"
+        TZ: UTC
+        KEYCLOAK_DEFAULT_THEME: theme-minimal
+        KEYCLOAK_WELCOME_THEME: theme-minimal
+        #KEYCLOAK_LOGLEVEL: DEBUG
+      links:
+        - mailhog
+      ports:
+        - 8088:8080
+      command:
+        - "-Dkeycloak.migration.action=import -Dkeycloak.migration.provider=dir -Dkeycloak.profile.feature.upload_scripts=enabled -Dkeycloak.migration.dir=/opt/jboss/keycloak/import-dir -Dkeycloak.migration.strategy=OVERWRITE_EXISTING"
+      volumes:
+        - ./_demo/standalone-ha.xml:/opt/jboss/keycloak/standalone/configuration/standalone-ha.xml
+        - ./_demo/import-dir:/opt/jboss/keycloak/import-dir
+        - ./theme-minimal/target/theme-minimal-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/theme-minimal-0.0.1-SNAPSHOT.jar
+        - ./spi-registration-profile/target/spi-registration-profile-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/spi-registration-profile-0.0.1-SNAPSHOT.jar
+        - ./spi-event-listener/target/spi-event-listener-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/spi-event-listener-0.0.1-SNAPSHOT.jar
+      depends_on:
+        - postgres
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mailhog
+    ports:
+      - "8025:8025"
