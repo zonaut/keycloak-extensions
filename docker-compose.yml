@@ -25,8 +25,6 @@ services:
         KEYCLOAK_DEFAULT_THEME: theme-minimal
         KEYCLOAK_WELCOME_THEME: theme-minimal
         #KEYCLOAK_LOGLEVEL: DEBUG
-      links:
-        - mailhog
       ports:
         - 8088:8080
       command:
