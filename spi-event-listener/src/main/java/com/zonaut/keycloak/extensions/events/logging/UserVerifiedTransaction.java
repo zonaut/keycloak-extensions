@@ -21,7 +21,7 @@ public class UserVerifiedTransaction extends AbstractKeycloakTransaction {
         log.info("-----------------------------------------------------------");
 
         // You could make a http call here and send the object.
-        // When we thrown an exception here, the user would not be verified when using .enlistPrepare
+        // When we throw an exception here, the user would not be verified when using .enlistPrepare
         //throw new RuntimeException("External call failed!");
     }
 

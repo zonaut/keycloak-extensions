@@ -32,7 +32,7 @@ public class PlaceholderEventListenerProvider implements EventListenerProvider {
         //
         // Let's assume for whatever reason you only want the user
         // to be able to verify his account if a transaction we make succeeds.
-        // Let's say an external call to a service needs to return a 200 response code or we thrown an exception.
+        // Let's say an external call to a service needs to return a 200 response code or we throw an exception.
 
         // When the user tries to login after a failed attempt,
         // the user remains unverified and when trying to login will receive another verify account email.
