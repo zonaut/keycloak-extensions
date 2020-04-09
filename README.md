@@ -57,3 +57,11 @@ Stop
 * all realms and users will be exported in the `_resources/demo-config/export-dir`
 * You can now run `docker-compose down` and revert the changes you made to the docker-compose file
 * Copy the contents of the export dir to the import dir if you want to replace them
+
+## Other resources
+
+Don't forget to look in the actual Keycloak code itself because the examples are based on the implementations itself.
+
+* https://github.com/keycloak
+* https://github.com/keycloak/keycloak/tree/master/examples
+* https://github.com/thomasdarimont/keycloak-extension-playground
