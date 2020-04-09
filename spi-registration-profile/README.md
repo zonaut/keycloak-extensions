@@ -34,3 +34,6 @@ Or when using Docker mount the file `./jar-name.jar:/opt/jboss/keycloak/standalo
 * Set the the default `Profile validation` to DISABLED and out custom one to REQUIRED
 * Click the Bindings tab and select our custom registration flow from the Registration flow dropdown and click save
 * Remove or set a style of display:none on the first and lastname div elements in `<THEME>/login/register.ftl`
+
+## Theme
+

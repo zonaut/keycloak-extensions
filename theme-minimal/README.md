@@ -6,10 +6,12 @@ Changes in this theme
 
 * The h1 tag in the `theme-minimal/welcome/index.ftl` file has been changed, `minimal` has been added to it.
   * You can check this on `http://localhost:8088/auth/`
-* The default email templates are copied from the Keycloak theme base into this theme so we can customize them.
+* The default email templates are copied from the Keycloak theme base dir into this theme
   * An extra variable `testNewVariable` has been added to `theme-minimal/email/<html AND text dir>/email-test.ftl`
     * Delete this variable if you don't use the `spi-mail-template-override` otherwise it will fail
   * The parent has been removed from the `theme-minimal/email/theme.properties` file and locales have been added
+* the default login folder has been copied from the Keycloak theme base dir into this theme
+  * The parent has been removed from the `theme-minimal/login/theme.properties` file
 
 ## Keycloak config
 
