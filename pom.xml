@@ -12,6 +12,7 @@
 		<module>spi-event-listener</module>
 		<module>spi-mail-template-override</module>
 		<module>spi-registration-profile</module>
+		<module>spi-resource</module>
 		<module>theme-minimal</module>
 	</modules>
 	
