@@ -1,1 +1,1 @@
-com.zonaut.keycloak.extensions.resource.HelloResourceProviderFactory
+com.zonaut.keycloak.extensions.resource.CustomResourceProviderFactory
