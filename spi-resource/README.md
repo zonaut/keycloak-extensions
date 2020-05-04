@@ -1,7 +1,6 @@
 # SPI resource
 
-An example of a custom event listener that logs all events.  
-Also contains an example of a transaction when acting on a certain event.
+An example of a custom REST resource.  
 
 ## TODO
 
