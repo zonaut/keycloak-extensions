@@ -9,6 +9,8 @@ Titles with * are already activated when running `docker-compose up`
   * example on how to change default mail behaviour and add extra variables to it.
 * [spi-registration-profile](spi-registration-profile/README.md)
   * disable first and last name validation in the registration page
+* [spi-resource](spi-resource/README.md) *
+  * example of a custom REST resource
 * [theme-minimal](theme-minimal/README.md) *
   * a custom theme with minimal changes
 
@@ -23,6 +25,7 @@ Build single module
     ./mvnw clean install -pl spi-event-listener
     ./mvnw clean install -pl spi-mail-template-override
     ./mvnw clean install -pl spi-registration-profile
+    ./mvnw clean install -pl spi-resource
     ./mvnw clean install -pl theme-minimal
 
 ## Run with Docker Compose
