@@ -2,6 +2,8 @@
 
 An example of a custom theme with only minimal changes.
 
+More info on https://www.keycloak.org/docs/latest/server_development/#_themes
+
 Changes in this theme
 
 * The h1 tag in the `theme-minimal/welcome/index.ftl` file has been changed, `minimal` has been added to it.
@@ -27,18 +29,18 @@ The theme can be changed in realm -> realm settings -> themes [tab] or can be pa
 Add or change the following in your `standalone-ha.xml` to disable caching
 
 ```xml
-    <subsystem xmlns="urn:jboss:domain:keycloak-server:1.1">
-        ...
-        <theme>
-            <staticMaxAge>-1</staticMaxAge>
-            <cacheThemes>false</cacheThemes>
-            <cacheTemplates>false</cacheTemplates>
-            <welcomeTheme>${env.KEYCLOAK_WELCOME_THEME:keycloak}</welcomeTheme>
-            <default>${env.KEYCLOAK_DEFAULT_THEME:keycloak}</default>
-            <dir>${jboss.home.dir}/themes</dir>
-        </theme>
-        ...
-    </subsystem>
+<subsystem xmlns="urn:jboss:domain:keycloak-server:1.1">
+    ...
+    <theme>
+        <staticMaxAge>-1</staticMaxAge>
+        <cacheThemes>false</cacheThemes>
+        <cacheTemplates>false</cacheTemplates>
+        <welcomeTheme>${env.KEYCLOAK_WELCOME_THEME:keycloak}</welcomeTheme>
+        <default>${env.KEYCLOAK_DEFAULT_THEME:keycloak}</default>
+        <dir>${jboss.home.dir}/themes</dir>
+    </theme>
+    ...
+</subsystem>
  ```
 
 Uncomment the following line in the docker-compose file

@@ -9,25 +9,25 @@ An example on how to change the default behaviour of the email templates and add
 Add the following in your `standalone-ha.xml`
 
 ```xml
-    <subsystem xmlns="urn:jboss:domain:ee:4.0">
-        ...
-        <global-modules>
-            <module name="org.freemarker"/>
-        </global-modules>
-        ...
-    </subsystem>
+<subsystem xmlns="urn:jboss:domain:ee:4.0">
+    ...
+    <global-modules>
+        <module name="org.freemarker"/>
+    </global-modules>
+    ...
+</subsystem>
  ```
 Also add the following to disable the default email template provider
 
 ```xml
-    <subsystem xmlns="urn:jboss:domain:keycloak-server:1.1">
-        <web-context>auth</web-context>
-        ...
-        <spi name="emailTemplate">
-            <provider name="freemarker" enabled="false"/>
-        </spi>
-        ...
-    </subsystem>
+<subsystem xmlns="urn:jboss:domain:keycloak-server:1.1">
+    <web-context>auth</web-context>
+    ...
+    <spi name="emailTemplate">
+        <provider name="freemarker" enabled="false"/>
+    </spi>
+    ...
+</subsystem>
  ```
 
 Copy the jar in the target folder to the `/opt/jboss/keycloak/standalone/deployments/` folder.
