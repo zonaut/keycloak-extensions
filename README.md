@@ -64,4 +64,5 @@ Don't forget to look in the actual Keycloak code itself because the examples are
 
 * https://github.com/keycloak
 * https://github.com/keycloak/keycloak/tree/master/examples
+* https://www.keycloak.org/docs/latest/server_development/
 * https://github.com/thomasdarimont/keycloak-extension-playground

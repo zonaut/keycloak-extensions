@@ -8,13 +8,13 @@ Add the following in your `standalone-ha.xml` because we need this to make use o
 You could choose to drop this but than you will need to provide an alternate for Validation... methods.
 
 ```xml
-    <subsystem xmlns="urn:jboss:domain:ee:4.0">
-        ...
-        <global-modules>
-            <module name="org.keycloak.keycloak-services"/>
-        </global-modules>
-        ...
-    </subsystem>
+<subsystem xmlns="urn:jboss:domain:ee:4.0">
+    ...
+    <global-modules>
+        <module name="org.keycloak.keycloak-services"/>
+    </global-modules>
+    ...
+</subsystem>
  ```
 
 Copy the jar in the target folder to the `/opt/jboss/keycloak/standalone/deployments/` folder.
