@@ -1807,6 +1807,6 @@
   "clientAuthenticationFlow" : "clients",
   "dockerAuthenticationFlow" : "docker auth",
   "attributes" : { },
-  "keycloakVersion" : "10.0.0",
+  "keycloakVersion" : "10.0.1",
   "userManagedAccessAllowed" : false
 }
