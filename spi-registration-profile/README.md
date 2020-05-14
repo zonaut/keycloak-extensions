@@ -31,7 +31,7 @@ Or when using Docker mount the file `./jar-name.jar:/opt/jboss/keycloak/standalo
 
 * Select our custom profile validation from the the list of providers and press save
 * Move our custom profile validation step under the default `Profile validation` step with the up and down buttons
-* Set the the default `Profile validation` to DISABLED and out custom one to REQUIRED
+* Set the the default `Profile validation` to DISABLED and our custom one to REQUIRED
 * Click the Bindings tab and select our custom registration flow from the Registration flow dropdown and click save
 
 ## Theme
