@@ -4,5 +4,6 @@
     <property name="TABLE_PREFIX" value="PRFX_" />
 
     <include relativeToChangelogFile="true" file="001-products.xml"/>
-    
+<!--    <include relativeToChangelogFile="true" file="002.another-one.xml"/>-->
+
 </databaseChangeLog>
