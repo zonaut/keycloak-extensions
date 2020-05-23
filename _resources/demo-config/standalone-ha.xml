@@ -166,6 +166,8 @@
             <spec-descriptor-property-replacement>false</spec-descriptor-property-replacement>
             <global-modules>
                 <module name="org.keycloak.keycloak-services"/>
+                <module name="org.keycloak.keycloak-model-jpa"/>
+                <module name="org.hibernate"/>
                 <module name="org.freemarker"/>
             </global-modules>
             <concurrent>

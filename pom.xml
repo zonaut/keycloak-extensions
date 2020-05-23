@@ -9,6 +9,7 @@
 	<name>KEYCLOAK EXTENSIONS</name>
 
 	<modules>
+		<module>provider-domain</module>
 		<module>spi-event-listener</module>
 		<module>spi-mail-template-override</module>
 		<module>spi-registration-profile</module>

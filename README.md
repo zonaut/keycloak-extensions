@@ -3,6 +3,8 @@
 Keycloak extension examples.  
 Titles with * are already activated when running `docker-compose up`
 
+* [provider-domain](provider-domain/README.md) *
+  * example of adding new domain entities  
 * [spi-event-listener](spi-event-listener/README.md) *
   * example of a custom event listener
 * [spi-mail-template-override](spi-mail-template-override/README.md) *
@@ -22,6 +24,7 @@ Build all
 
 Build single module
 
+    ./mvnw clean install -pl provider-domain
     ./mvnw clean install -pl spi-event-listener
     ./mvnw clean install -pl spi-mail-template-override
     ./mvnw clean install -pl spi-registration-profile

@@ -8,6 +8,8 @@ services:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: password
+    ports:
+      - 5434:5432
 
   keycloak:
     image: jboss/keycloak:10.0.1
@@ -36,6 +38,7 @@ services:
       - ./_resources/demo-config/export-dir:/opt/jboss/keycloak/export-dir
       #- ./theme-minimal/src/main/resources/theme/theme-minimal:/opt/jboss/keycloak/themes/theme-minimal
       - ./theme-minimal/target/theme-minimal-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/theme-minimal-0.0.1-SNAPSHOT.jar
+      - ./provider-domain/target/provider-domain-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/provider-domain-0.0.1-SNAPSHOT.jar
       - ./spi-registration-profile/target/spi-registration-profile-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/spi-registration-profile-0.0.1-SNAPSHOT.jar
       - ./spi-resource/target/spi-resource-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/spi-resource-0.0.1-SNAPSHOT.jar
       - ./spi-event-listener/target/spi-event-listener-0.0.1-SNAPSHOT.jar:/opt/jboss/keycloak/standalone/deployments/spi-event-listener-0.0.1-SNAPSHOT.jar
