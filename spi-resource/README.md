@@ -11,8 +11,11 @@ Or when using Docker mount the file `./jar-name.jar:/opt/jboss/keycloak/standalo
 
 ## Test
 
-    curl -i --request GET http://localhost:8088/auth/realms/master/custom/users/admin
-    
-    curl -i --request GET http://localhost:8088/auth/realms/placeholder/custom/users/jennifer
-    curl -i --request GET http://localhost:8088/auth/realms/placeholder/custom/users/robert
+Run one of the scripts in the root of this module to test the our example endpoint.
 
+    // call auth/realms/<REALM>/custom/users/<user> with an anonymous user
+    ./test-anonymous-user.sh
+    
+    // call auth/realms/<REALM>/custom/users/<user> with an authenticated user
+    // you can switch variables in the script to test different use cases
+    ./test-authenticated-user.sh

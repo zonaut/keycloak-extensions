@@ -14,8 +14,8 @@ public class PlaceholderEventListenerProvider implements EventListenerProvider {
 
     private static final Logger log = Logger.getLogger(PlaceholderEventListenerProvider.class);
 
-    private KeycloakSession session;
-    private RealmProvider model;
+    private final KeycloakSession session;
+    private final RealmProvider model;
 
     public PlaceholderEventListenerProvider(KeycloakSession session) {
         this.session = session;
@@ -24,7 +24,7 @@ public class PlaceholderEventListenerProvider implements EventListenerProvider {
 
     @Override
     public void onEvent(Event event) {
-        log.info("## NEW DEFAULT EVENT");
+        log.infof("## NEW %s EVENT", event.getType());
         log.info("-----------------------------------------------------------");
         event.getDetails().forEach((key, value) -> log.info(key + ": " + value));
 

@@ -20,7 +20,9 @@ import java.util.List;
 
 public class CustomResourceProvider implements RealmResourceProvider {
 
-    private KeycloakSession session;
+    private static final Logger log = Logger.getLogger(CustomResourceProvider.class);
+
+    private final KeycloakSession session;
 
     public CustomResourceProvider(KeycloakSession session) {
         this.session = session;
