@@ -1,10 +1,8 @@
 # SPI resource
 
-An example of a custom REST resource.  
+An example of a custom REST resource.
 
-## TODO
-
-* The current example allows unauthorized users, add an example for authorized users
+this example will add a new base endpoint `auth/realms/<REALM>/custom
 
 ## Keycloak config
 

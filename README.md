@@ -48,8 +48,18 @@ Stop
   * User -> admin
   * Password -> password
 * A placeholder realm is available on http://localhost:8088/auth/realms/placeholder
-  * Look in the `_resources/demo-config/import-dir/placeholder-users-0.json` file for available users
+  * users
+    * james@placeholder.com
+    * jennifer@placeholder.com
+    * john@placeholder.com
+    * mary@placeholder.com
+    * patricia@placeholder.com
+    * robert@placeholder.com
   * Password is always 'password' for those users
+  * a realm role product_view is available and assigned to robert@placeholder.com
+  * 2 clients are available under this realm
+    * client-one - public with Direct Access Grants Enabled
+    * client-two - public with Direct Access Grants Enabled
 * Mailhog will be available on http://localhost:8025/
 
 ## Export realms and users
