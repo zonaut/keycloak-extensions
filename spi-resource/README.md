@@ -2,7 +2,7 @@
 
 An example of a custom REST resource.
 
-this example will add a new base endpoint `auth/realms/<REALM>/custom
+this example will add a new base endpoint `auth/realms/<REALM>/custom`
 
 ## Keycloak config
 
