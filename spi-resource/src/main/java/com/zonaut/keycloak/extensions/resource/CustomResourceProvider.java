@@ -31,7 +31,7 @@ public class CustomResourceProvider implements RealmResourceProvider {
     @GET
     @Path("users/{name}")
     @Produces({MediaType.APPLICATION_JSON})
-    public Response getUsersByNameForAnonymous(
+    public Response getUsersByName(
             @QueryParam("auth_check_type") AuthCheckType authCheckType,
             @PathParam("name") String name) {
 
