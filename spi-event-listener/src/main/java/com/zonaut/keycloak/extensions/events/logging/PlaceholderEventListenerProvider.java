@@ -43,6 +43,9 @@ public class PlaceholderEventListenerProvider implements EventListenerProvider {
             if (user != null && user.getEmail() != null && user.isEmailVerified()) {
                 log.info("USER HAS VERIFIED EMAIL : " + event.getUserId());
 
+                // Example of adding an attribute when this event happens
+                user.setSingleAttribute("attribute-key", "attribute-value");
+
                 UserUuidDto userUuidDto = new UserUuidDto(event.getType().name(), event.getUserId(), user.getEmail());
                 UserVerifiedTransaction userVerifiedTransaction = new UserVerifiedTransaction(userUuidDto);
 
