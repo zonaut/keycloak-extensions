@@ -14,6 +14,9 @@ Changes in this theme
   * The parent has been removed from the `theme-minimal/email/theme.properties` file and locales have been added
 * the default login folder has been copied from the Keycloak theme base dir into this theme
   * The parent has been removed from the `theme-minimal/login/theme.properties` file
+* an example on how to access an environment variable in the theme template files
+  * a testExternalVar is declared in the theme.properties file to use the assigned environment variable set in the docker-compose file
+  * the `theme-minimal/welcome/index.ftl` file uses it as an example
 
 ## Keycloak config
 
