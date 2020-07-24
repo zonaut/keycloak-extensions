@@ -6,7 +6,7 @@ More info on https://www.keycloak.org/docs/latest/server_development/#_themes
 
 Changes in this theme
 
-* The h1 tag in the `theme-minimal/welcome/index.ftl` file has been changed, `minimal` has been added to it.
+* The h1 tag in the `theme-minimal/welcome/index.ftl` file has been changed, a variable `testExternalVar` defined in `theme.properties` has been added to it.
   * You can check this on `http://localhost:8088/auth/`
 * The default email templates are copied from the Keycloak theme base dir into this theme
   * An extra variable `testNewVariable` has been added to `theme-minimal/email/<html AND text dir>/email-test.ftl`
