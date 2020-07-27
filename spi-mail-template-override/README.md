@@ -9,7 +9,7 @@ An example on how to change the default behaviour of the email templates and add
 Add the following in your `standalone-ha.xml`
 
 ```xml
-<subsystem xmlns="urn:jboss:domain:ee:4.0">
+<subsystem xmlns="urn:jboss:domain:ee:5.0">
     ...
     <global-modules>
         <module name="org.freemarker"/>

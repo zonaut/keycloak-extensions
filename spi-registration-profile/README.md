@@ -8,7 +8,7 @@ Add the following in your `standalone-ha.xml` because we need this to make use o
 You could choose to drop this but than you will need to provide an alternate for Validation... methods.
 
 ```xml
-<subsystem xmlns="urn:jboss:domain:ee:4.0">
+<subsystem xmlns="urn:jboss:domain:ee:5.0">
     ...
     <global-modules>
         <module name="org.keycloak.keycloak-services"/>

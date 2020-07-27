@@ -11,7 +11,7 @@ This will create the following new table
 Add the following in your `standalone-ha.xml`
 
 ```xml
-<subsystem xmlns="urn:jboss:domain:ee:4.0">
+<subsystem xmlns="urn:jboss:domain:ee:5.0">
     ...
     <global-modules>
         <module name="org.keycloak.keycloak-model-jpa"/>
