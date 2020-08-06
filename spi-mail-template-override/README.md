@@ -12,6 +12,7 @@ Add the following in your `standalone-ha.xml`
 <subsystem xmlns="urn:jboss:domain:ee:5.0">
     ...
     <global-modules>
+        <module name="org.keycloak.keycloak-services"/>
         <module name="org.freemarker"/>
     </global-modules>
     ...
