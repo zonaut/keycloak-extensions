@@ -6,19 +6,7 @@ An example on how to change the default behaviour of the email templates and add
 
 ## Keycloak config
 
-Add the following in your `standalone-ha.xml`
-
-```xml
-<subsystem xmlns="urn:jboss:domain:ee:5.0">
-    ...
-    <global-modules>
-        <module name="org.keycloak.keycloak-services"/>
-        <module name="org.freemarker"/>
-    </global-modules>
-    ...
-</subsystem>
- ```
-Also add the following to disable the default email template provider
+Disable the default email template provider in `standalone-ha.xml`
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:keycloak-server:1.1">
