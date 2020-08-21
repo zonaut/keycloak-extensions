@@ -12,7 +12,7 @@ services:
       - 5434:5432
 
   keycloak:
-    image: jboss/keycloak:11.0.0
+    image: jboss/keycloak:11.0.1
     container_name: keycloak
     environment:
       DB_VENDOR: POSTGRES
