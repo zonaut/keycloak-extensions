@@ -1814,6 +1814,6 @@
     "clientSessionIdleTimeout" : "0",
     "clientSessionMaxLifespan" : "0"
   },
-  "keycloakVersion" : "11.0.1",
+  "keycloakVersion" : "11.0.2",
   "userManagedAccessAllowed" : false
 }

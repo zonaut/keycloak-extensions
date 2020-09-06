@@ -18,7 +18,7 @@
         <maven.compiler.target>11</maven.compiler.target>
 
         <!-- https://mvnrepository.com/artifact/org.keycloak/keycloak-parent -->
-        <keycloak.version>11.0.1</keycloak.version>
+        <keycloak.version>11.0.2</keycloak.version>
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.wildfly.plugins/wildfly-maven-plugin -->
