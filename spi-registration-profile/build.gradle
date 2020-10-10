@@ -1,0 +1,7 @@
+apply plugin: 'application'
+
+dependencies {
+    implementation "org.keycloak:keycloak-server-spi:$keycloakVersion"
+    implementation "org.keycloak:keycloak-server-spi-private:$keycloakVersion"
+    implementation "org.keycloak:keycloak-services:$keycloakVersion"
+}

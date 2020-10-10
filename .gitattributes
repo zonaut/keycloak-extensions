@@ -1,2 +1,6 @@
+# Git repo languages
 *.ftl linguist-detectable=false
 *.css linguist-detectable=false
+
+# Windows CMD does not like LF in batch files
+*.bat text eol=crlf

@@ -9,6 +9,7 @@
 /out
 target/
 dist/
+build/
 
 .gradle
 

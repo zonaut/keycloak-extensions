@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+    }
+}
+
+ext {
+    set('keycloakVersion', "11.0.2")
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+//    apply plugin: 'com.github.johnrengelman.shadow'
+    apply plugin: 'java'
+
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+
+    group = 'com.zonaut.keycloak'
+    version = '0.0.1-SNAPSHOT'
+
+    dependencies {
+        //
+    }
+}

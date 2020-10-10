@@ -21,6 +21,8 @@ Titles with * are already activated when running `docker-compose up`
 Build all
 
     ./mvnw clean install
+    
+    ./gradlew clean build
 
 Build single module
 
@@ -30,6 +32,13 @@ Build single module
     ./mvnw clean install -pl spi-registration-profile
     ./mvnw clean install -pl spi-resource
     ./mvnw clean install -pl theme-minimal
+    
+    ./gradlew clean build -p provider-domain
+    ./gradlew clean build -p spi-event-listener
+    ./gradlew clean build -p spi-mail-template-override
+    ./gradlew clean build -p spi-registration-profile
+    ./gradlew clean build -p spi-resource
+    ./gradlew clean build -p theme-minimal
 
 ## Run with Docker Compose
 
@@ -38,6 +47,8 @@ You need to build all modules first because we mount the jars in the docker-comp
 Run
 
     docker-compose up
+    
+    docker-compose -f docker-compose-gradle.yml up
 
 Stop
 

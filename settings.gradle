@@ -1,0 +1,8 @@
+rootProject.name = 'keycloak-extensions'
+
+include 'provider-domain'
+include 'spi-event-listener'
+include 'spi-mail-template-override'
+include 'spi-registration-profile'
+include 'spi-resource'
+include 'theme-minimal'
