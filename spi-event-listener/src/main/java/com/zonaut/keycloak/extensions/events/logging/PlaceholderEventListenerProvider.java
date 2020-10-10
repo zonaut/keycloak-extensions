@@ -5,6 +5,8 @@ import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;
 import org.keycloak.events.EventType;
 import org.keycloak.events.admin.AdminEvent;
+import org.keycloak.events.admin.OperationType;
+import org.keycloak.events.admin.ResourceType;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
 import org.keycloak.models.RealmProvider;
@@ -63,9 +65,15 @@ public class PlaceholderEventListenerProvider implements EventListenerProvider {
     public void onEvent(AdminEvent adminEvent, boolean b) {
         log.info("## NEW ADMIN EVENT");
         log.info("-----------------------------------------------------------");
-        log.info("Resource pathdd" + ": " + adminEvent.getResourcePath());
+        log.info("Resource path" + ": " + adminEvent.getResourcePath());
         log.info("Resource type" + ": " + adminEvent.getResourceType());
         log.info("Operation type" + ": " + adminEvent.getOperationType());
+
+        if (ResourceType.USER.equals(adminEvent.getResourceType())
+                && OperationType.CREATE.equals(adminEvent.getOperationType())) {
+            log.info("A new user has been created");
+        }
+
         log.info("-----------------------------------------------------------");
     }
 
