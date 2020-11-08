@@ -9,7 +9,7 @@ buildscript {
 }
 
 ext {
-    set('keycloakVersion', "11.0.2")
+    set('keycloakVersion', "11.0.3")
 }
 
 allprojects {
