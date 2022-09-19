@@ -1,5 +1,7 @@
 # Keycloak extensions
 
+**This repo is no longer maintained**
+
 Keycloak extension examples.  
 Titles with * are already activated when running `docker-compose up`
 
